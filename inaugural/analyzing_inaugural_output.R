@@ -204,8 +204,8 @@ ks_result2 <- with(tmp_data,
   ks.test(dom_int[era == "pre 1932"], y = dom_int[era == "post 1945"], alternative = "less"))
 
 
-file_path <- "~/data/Dissertation/Writing/NAACL_paper/inaug_shift_plot.pdf"
-file_path2 <- "~/data/Dissertation/Writing/NAACL_paper/inaug_shift_plot2.pdf"
+file_path <- "inaug_shift_plot.pdf"
+file_path2 <- "inaug_shift_plot2.pdf"
 
 inaug_shift <- ggplot(tmp_data, aes(x = dom_int, y = factor(post_1945_txt))) + 
   geom_density_ridges(color = "white", fill = "red", lwd = 1) + 
