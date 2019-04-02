@@ -9,8 +9,8 @@ library(quanteda)
 library(cowplot)
 library(uwot)
 library(xtable)
-load("~/Dropbox/Dissertation_data/frus_bwe_1964_1966_2.rdata")
-load("~/Dropbox/Dissertation_data/frus_subset.rdata")
+load("frus_bwe_1964_1966_2.rdata")
+load("frus_subset.rdata")
 
 # two sets of embeddings: vanilla and anchored ----
 anchored_frus <- double_anchor_word_embeddings(
